@@ -1,22 +1,40 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0;
+  list-style: none;
+}
 .list-item {
   list-style: none;
 }
-.list-item1, .list-item2, .list-item3 {
+#list-item1,
+#list-item2,
+#list-item3 {
   position: relative;
-  width: 70px;
-  height: 70px;
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
+  width: 50px;
+  height: 50px;
   margin-left: 15px;
   margin-bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(5px);
   transform-style: preserve-3d;
   transform: perspective(800px);
   opacity: 50%;
+  border-radius: 4px;
 }
 
+#list-item1:hover,
+#list-item2:hover,
+#list-item3:hover {
+  background: rgba(245, 241, 241, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+::ng-deep svg:hover{
+color: #000000;
+}

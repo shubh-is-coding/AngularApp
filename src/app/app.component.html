@@ -1,22 +1,56 @@
-<div class="row background" id="background">
-  <div class="col-sm-5" style="align-items: center; display: flex; justify-content: space-between">
-    <app-menu></app-menu>
-    <div class="img-section" id="img-section">
-      <img src="/assets/helloImg.png" alt="helloImg" />
+<div class="well" id="well">
+  <!-- SECTION 1 -->
+
+  <!-- NAVBAR -->
+  <div class="nav py-4" style="background-color: transparent;position: absolute;right: 20px;">
+    <div class="horizontal-list">
+      <svg width="100%" height="100%" class="nav-item" id="nav-item1">
+        <text x="50%" y="50%" class="nav-text" (click)="scrollToSkills()">My Skills</text>
+      </svg>
+      <svg width="100%" height="100%" class="nav-item" id="nav-item2">
+        <text x="50%" y="50%" class="nav-text" (click)="scrollToWork()">Work</text>
+      </svg>
+      <svg width="100%" height="100%" class="nav-item" id="nav-item3">
+        <text x="50%" y="50%" class="nav-text" (click)="scrollToContact()">Contact</text>
+      </svg>
     </div>
   </div>
 
-  <div class="col-sm-7" style="align-items: flex-start; display: flex; justify-content: center; flex-direction: column;">
-    <div>
-      <div class="name-title" id="name-title">
-        <span data-text="Hi,">Hi,</span>
-        <span data-text="I'm Shubham">I'm Shubham</span>
+  <div class="row sec1 home">
+    <div class="col-sm-5 left-section">
+      <app-menu></app-menu>
+      <div class="img-section" id="img-section">
+        <img src="/assets/helloImg.png" alt="helloImg" />
       </div>
-
-      <div class="name-description typewriter" id="name-description">
-        <p class="pa">Frontend Developer based in Mumbai, India</p>
+    </div>
+  
+    <div class="col-sm-7 right-section">
+      <div style="align-self: flex-start;">
+        <div class="name-title" id="name-title">
+          <span data-text="Hi,">Hi,</span>
+          <span data-text="I'm Shubham">I'm Shubham</span>
+        </div>
+  
+        <div class="name-description typewriter" id="name-description">
+          <p>Frontend Developer based in Mumbai, India<span class="fs-4">🇮🇳</span></p>
+        </div>
       </div>
-
     </div>
   </div>
+  
+    <!-- SECTION 2 -->
+  <div class="skills" style="height: 100vh;background-color: crimson;"></div>
+
+   <!-- SECTION 3 -->
+   <div class="work" style="height: 100vh;background-color: rgb(67, 220, 20);"></div>
+
+    <!-- SECTION 4 -->
+  <div class="contact" style="height: 100vh;background-color: rgb(220, 20, 217);"></div>
 </div>
+
+ <!-- SCROLL TO TOP -->
+ <span class="scrollTop">
+ <i (click)="scrollToHome()">
+  <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#dedede" stroke-width="0.9545454545454546" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevrons-up"><path d="m17 11-5-5-5 5"/><path d="m17 18-5-5-5 5"/></svg>
+ </i>
+</span>
