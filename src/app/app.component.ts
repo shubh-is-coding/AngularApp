@@ -22,18 +22,18 @@ export class AppComponent implements OnInit {
     const anim2: any = document.getElementById('img-section');
     const anim3: any = document.getElementById('name-description');
     const anim4: any = document.getElementById('sec1');
-    const anim5: any = document.getElementById('nav-item1');
-    const anim6: any = document.getElementById('nav-item2');
-    const anim7: any = document.getElementById('nav-item3');
+    const anim5: any = document.getElementById('skills');
+    const anim6: any = document.getElementById('work');
+    const anim7: any = document.getElementById('contact');
 
     gsap.from(anim1, {
-      y: -100,
+      y: 100,
       duration: 0.8,
       delay: 0.8,
       opacity: 0,
     });
     gsap.from(anim2, {
-      x: -300,
+      y: -100,
       duration: 0.8,
       delay: 0.8,
       opacity: 0,
@@ -51,19 +51,19 @@ export class AppComponent implements OnInit {
       opacity: 0.5,
     });
     gsap.from(anim5, {
-      y: -200,
+      y: -50,
       duration: 0.6,
       delay: 4,
       opacity: 0,
     });
     gsap.from(anim6, {
-      y: -200,
+      y: -50,
       duration: 0.6,
       delay: 3.6,
       opacity: 0,
     });
     gsap.from(anim7, {
-      y: -200,
+      y: -50,
       duration: 0.6,
       delay: 3.2,
       opacity: 0,
