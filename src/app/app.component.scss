@@ -28,7 +28,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  width: 85%;
   height: 700px;
   flex-wrap: wrap;
 }
@@ -165,6 +165,7 @@ img {
   width: 360px;
   height: auto;
 }
+
 // MEDIA QUERIES
 // MID
 @media screen and (min-width: 900) and (max-width: 1810px) {

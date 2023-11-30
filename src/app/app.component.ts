@@ -4,20 +4,20 @@ import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { MenuComponent } from './menu/menu.component';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import $ from 'jquery';
+import { FlipCardComponent } from "./flip-card/flip-card.component";
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
-  imports: [CommonModule, RouterOutlet, FormsModule, MenuComponent],
+    selector: 'app-root',
+    standalone: true,
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss',
+    imports: [CommonModule, RouterOutlet, FormsModule, MenuComponent, FlipCardComponent]
 })
 export class AppComponent implements OnInit {
   @ViewChild('yourElement') yourElement: ElementRef;
 
   ngOnInit() {
+  
     const anim1: any = document.getElementById('name-title');
     const anim2: any = document.getElementById('img-section');
     const anim3: any = document.getElementById('name-description');
