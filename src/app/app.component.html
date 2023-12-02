@@ -9,8 +9,7 @@
       </span>
       <span class="nav-item" id="work" (click)="scrollToWork()"> Work </span>
       <span class="nav-item" id="contact" (click)="scrollToContact()">
-        Contact </span
-      >̀
+        Contact </span>̀
     </div>
   </div>
 
@@ -28,52 +27,42 @@
 
         <div class="name-description typewriter" id="name-description">
           <span>
-          <p>
-            Frontend Developer based in Mumbai, India<span class="fs-4"
-              >🇮🇳</span
-            >
-          </p>
-        </span>
+            <p>
+              Frontend Developer based in Mumbai, India<span class="fs-4">🇮🇳</span>
+            </p>
+          </span>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- SECTION 2 -->
-  <div class="skills" style="height: 100vh;"></div>
+  <!-- SKILLS -->
+  <div class="skills row" style="height: 100vh;">
+    <div class="center-head">
+      <app-skill></app-skill>
+      <span class="ideaImg">
+        <img src="/assets/IdeaImg.png" alt="ideaImg">
+      </span>
+    </div>
+  </div>
 
-  <!-- SECTION 3 -->
-  <div
-    class="work row"
-    style="height: 100vh;"
-  >
-  <div class="center-head">
-    <app-flip-card></app-flip-card>
- </div>
-</div>
+  <!-- WORK -->
+  <div class="work row" style="height: 100vh;">
+    <div class="center-head">
+      <app-flip-card></app-flip-card>
+    </div>
+  </div>
 
-  <!-- SECTION 4 -->
-  <div
-    class="contact"
-    style="height: 100vh;"
-  ></div>
+  <!-- CONTACT -->
+  <div class="contact" style="height: 100vh;"></div>
 </div>
 
 <!-- SCROLL TO TOP -->
-<span class="scrollTop">
+<span class="scrollTop" id="scrollTop">
   <i (click)="scrollToHome()">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="44"
-      height="44"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="#dedede"
-      stroke-width="0.9545454545454546"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      class="lucide lucide-chevrons-up"
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#dedede"
+      stroke-width="0.9545454545454546" stroke-linecap="round" stroke-linejoin="round"
+      class="lucide lucide-chevrons-up">
       <path d="m17 11-5-5-5 5" />
       <path d="m17 18-5-5-5 5" />
     </svg>

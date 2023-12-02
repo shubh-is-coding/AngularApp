@@ -5,13 +5,14 @@ import { FormsModule } from '@angular/forms';
 import { MenuComponent } from './menu/menu.component';
 import { gsap } from 'gsap';
 import { FlipCardComponent } from "./flip-card/flip-card.component";
+import { SkillComponent } from "./skill/skill.component";
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
-    imports: [CommonModule, RouterOutlet, FormsModule, MenuComponent, FlipCardComponent]
+    imports: [CommonModule, RouterOutlet, FormsModule, MenuComponent, FlipCardComponent, SkillComponent]
 })
 export class AppComponent implements OnInit {
   @ViewChild('yourElement') yourElement: ElementRef;
@@ -25,6 +26,7 @@ export class AppComponent implements OnInit {
     const anim5: any = document.getElementById('skills');
     const anim6: any = document.getElementById('work');
     const anim7: any = document.getElementById('contact');
+    const anim8: any = document.getElementById('scrollTop');
 
     gsap.from(anim1, {
       y: 100,
@@ -52,20 +54,25 @@ export class AppComponent implements OnInit {
     });
     gsap.from(anim5, {
       y: -50,
-      duration: 0.6,
-      delay: 4,
+      duration: 0.4,
+      delay: 3,
       opacity: 0,
     });
     gsap.from(anim6, {
       y: -50,
-      duration: 0.6,
-      delay: 3.6,
+      duration: 0.4,
+      delay: 2.6,
       opacity: 0,
     });
     gsap.from(anim7, {
       y: -50,
-      duration: 0.6,
-      delay: 3.2,
+      duration: 0.4,
+      delay: 2.2,
+      opacity: 0,
+    });
+    gsap.from(anim8, {
+      duration: 0.4,
+      delay: 2.2,
       opacity: 0,
     });
   }

@@ -25,20 +25,20 @@ export class MenuComponent implements OnInit {
 
     gsap.from(icon1, {
       x: -200,
-      duration: 0.6,
-      delay: 2.8,
+      duration: 0.4,
+      delay: 1.8,
       opacity: 0,
     });
     gsap.from(icon2, {
       x: -200,
-      duration: 0.6,
-      delay: 2.6,
+      duration: 0.4,
+      delay: 1.6,
       opacity: 0,
     });
     gsap.from(icon3, {
       x: -200,
-      duration: 0.6,
-      delay: 2.4,
+      duration: 0.4,
+      delay: 1.4,
       opacity: 0,
     });
   }

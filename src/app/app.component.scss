@@ -130,7 +130,7 @@
   transition: transform 0.3s ease-in-out;
 }
 .scrollTop:hover {
-  background: rgba(255, 255, 255, 0.249);
+  background: rgba(255, 255, 255, 0.053);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -165,7 +165,25 @@ img {
   width: 360px;
   height: auto;
 }
+.ideaImg{
+  position: relative;
+  right: 15px;
+  top: 40px;
+  animation: anim 1.4s infinite;
+}
+@keyframes anim {
+  0% {
+    transform: translateY(0);
+  }
 
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
 // MEDIA QUERIES
 // MID
 @media screen and (min-width: 900) and (max-width: 1810px) {
