@@ -2,14 +2,20 @@
   <!-- SECTION 1 -->
 
   <!-- NAVBAR -->
-  <div class="nav py-4">
-    <div class="horizontal-list">
-      <span class="nav-item" id="skills" (click)="scrollToSkills()">
-        My Skills
+  <div class="col-12 nav py-4">
+    <div class="col-sm-12 horizontal-list px-3">
+      <a href="/assets/Frontend_Developer_Shubham.pdf" target="_blank" style="text-decoration: none;">
+        <span class="nav-item" id="resume">
+          Resume </span>
+      </a>
+      <span>
+        <span class="nav-item px-4" id="skills" (click)="scrollToSkills()">
+          My Skills
+        </span>
+        <span class="nav-item px-4" id="work" (click)="scrollToWork()">
+          Work
+        </span>
       </span>
-      <span class="nav-item" id="work" (click)="scrollToWork()"> Work </span>
-      <span class="nav-item" id="contact" (click)="scrollToContact()">
-        Contact </span>̀
     </div>
   </div>
 
@@ -34,6 +40,7 @@
         </div>
       </div>
     </div>
+    <div class="center-head">Scroll</div>
   </div>
 
   <!-- SKILLS -->
@@ -53,24 +60,21 @@
     </div>
   </div>
 
-  <!-- CONTACT -->
-  <div class="contact" style="height: 100vh;"></div>
-</div>
 
-<!-- SCROLL TO TOP -->
-<span class="scrollTop" id="scrollTop">
-  <i (click)="scrollToHome()">
-    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#dedede"
-      stroke-width="0.9545454545454546" stroke-linecap="round" stroke-linejoin="round"
-      class="lucide lucide-chevrons-up">
-      <path d="m17 11-5-5-5 5" />
-      <path d="m17 18-5-5-5 5" />
-    </svg>
-  </i>
-</span>
+  <!-- SCROLL TO TOP -->
+  <span class="scrollTop" id="scrollTop">
+    <i (click)="scrollToHome()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#dedede"
+        stroke-width="0.9545454545454546" stroke-linecap="round" stroke-linejoin="round"
+        class="lucide lucide-chevrons-up">
+        <path d="m17 11-5-5-5 5" />
+        <path d="m17 18-5-5-5 5" />
+      </svg>
+    </i>
+  </span>
 
-<!-- CONTACT ME  -->
-<span class="contact-links">
-  <app-menu></app-menu>
-</span>
-<div class="contact-effect"></div>
+  <!-- CONTACT ME  -->
+  <span class="contact-links">
+    <app-menu></app-menu>
+  </span>
+  <div class="contact-effect"></div>

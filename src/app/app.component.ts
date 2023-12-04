@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
     const anim4: any = document.getElementById('sec1');
     const anim5: any = document.getElementById('skills');
     const anim6: any = document.getElementById('work');
-    const anim7: any = document.getElementById('contact');
+    const anim7: any = document.getElementById('resume');
     const anim8: any = document.getElementById('scrollTop');
 
     gsap.from(anim1, {
@@ -55,13 +55,13 @@ export class AppComponent implements OnInit {
     gsap.from(anim5, {
       y: -50,
       duration: 0.4,
-      delay: 3,
+      delay: 2.6,
       opacity: 0,
     });
     gsap.from(anim6, {
       y: -50,
       duration: 0.4,
-      delay: 2.6,
+      delay: 3,
       opacity: 0,
     });
     gsap.from(anim7, {
